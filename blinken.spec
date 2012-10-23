@@ -1,7 +1,7 @@
 Name:		blinken
 Summary:	Simon Says Game
 Version: 4.9.2
-Release: 1
+Release: 2
 Group:		Graphical desktop/KDE
 License:	GPLv2
 URL:		http://edu.kde.org/blinken/
