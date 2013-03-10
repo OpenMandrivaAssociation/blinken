@@ -1,11 +1,11 @@
-Name:		blinken
 Summary:	Simon Says Game
+Name:		blinken
 Version:	4.10.1
 Release:	1
 Group:		Graphical desktop/KDE
 License:	GPLv2
-URL:		http://edu.kde.org/blinken/
-Source:		ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
+Url:		http://edu.kde.org/blinken/
+Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
 
 %description
