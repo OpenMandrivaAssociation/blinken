@@ -15,7 +15,7 @@ start game button to begin. Watch the computer and copy the pattern it
 makes. Complete the sequence in the right order to win.
 
 %files
-%doc AUTHORS Changelog
+%doc AUTHORS
 %{_kde_appsdir}/blinken
 %{_kde_bindir}/blinken
 %{_kde_iconsdir}/*/*/apps/blinken.*
@@ -38,6 +38,7 @@ makes. Complete the sequence in the right order to win.
 %changelog
 * Wed Apr 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.2-1
 - New version 4.10.2
+- Update doc files
 
 * Sat Mar 09 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.10.1-1
 - New version 4.10.1
