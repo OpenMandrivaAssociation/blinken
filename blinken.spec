@@ -2,8 +2,8 @@ Summary:	Simon Says Game
 Name:		blinken
 Version:	4.14.1
 Release:	1
+License:	GPLv2+
 Group:		Graphical desktop/KDE
-License:	GPLv2
 Url:		http://edu.kde.org/blinken/
 Source0:	ftp://ftp.kde.org/pub/kde/stable/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	kdelibs4-devel
@@ -20,6 +20,7 @@ makes. Complete the sequence in the right order to win.
 %{_kde_bindir}/blinken
 %{_kde_iconsdir}/*/*/apps/blinken.*
 %{_kde_applicationsdir}/blinken.desktop
+%{_kde_datadir}/appdata/blinken.appdata.xml
 %{_kde_datadir}/config.kcfg/blinken.kcfg
 %{_kde_docdir}/HTML/*/blinken
 
@@ -38,6 +39,7 @@ makes. Complete the sequence in the right order to win.
 %changelog
 * Mon Sep 29 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.14.1-1
 - New version 4.14.1
+- Update files
 
 * Tue Jul 15 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 4.13.3-1
 - New version 4.13.3
