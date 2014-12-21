@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 Summary:	Simon Says Game
 Name:		blinken
-Version:	14.11.97
+Version:	14.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
