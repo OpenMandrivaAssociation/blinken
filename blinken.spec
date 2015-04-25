@@ -35,10 +35,11 @@ makes. Complete the sequence in the right order to win.
 %doc AUTHORS
 %{_bindir}/blinken
 %{_iconsdir}/*/*/apps/blinken.*
+%{_datadir}/blinken
 %{_datadir}/appdata/blinken.appdata.xml
 %{_datadir}/config.kcfg/blinken.kcfg
 %{_docdir}/HTML/*/blinken
-
+%{_datadir}/applications/org.kde.blinken.desktop
 #----------------------------------------------------------------------
 
 %prep
