@@ -1,4 +1,5 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+
 Summary:	Simon Says Game
 Name:		blinken
 Version:	15.04.0
@@ -32,13 +33,11 @@ makes. Complete the sequence in the right order to win.
 
 %files
 %doc AUTHORS
-%{_datadir}/blinken
-%{_kde_bindir}/blinken
-%{_kde_iconsdir}/*/*/apps/blinken.*
-%{_datadir}/applications/org.kde.blinken.desktop
-%{_kde_datadir}/appdata/blinken.appdata.xml
-%{_kde_datadir}/config.kcfg/blinken.kcfg
-%{_kde_docdir}/HTML/*/blinken
+%{_bindir}/blinken
+%{_iconsdir}/*/*/apps/blinken.*
+%{_datadir}/appdata/blinken.appdata.xml
+%{_datadir}/config.kcfg/blinken.kcfg
+%{_docdir}/HTML/*/blinken
 
 #----------------------------------------------------------------------
 
@@ -46,7 +45,8 @@ makes. Complete the sequence in the right order to win.
 %setup -q
 
 %build
-%cmake -G Ninja
+%cmake_kde5
+
 ninja
 
 %install
