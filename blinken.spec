@@ -7,9 +7,7 @@ Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/blinken/
-Source0:	ftp://ftp.kde.org/pub/kde/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	cmake
-BuildRequires:	ninja
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(Phonon4Qt5)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
@@ -44,11 +42,11 @@ makes. Complete the sequence in the right order to win.
 
 %prep
 %setup -q
-
-%build
 %cmake_kde5
 
-ninja
+%build
+%ninja -C build
 
 %install
-DESTDIR="%{buildroot}" ninja install -C build
+%ninja_install -C build
+
