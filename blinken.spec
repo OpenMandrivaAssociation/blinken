@@ -22,6 +22,7 @@ BuildRequires:	cmake(KF5XmlGui)
 BuildRequires:	cmake(KF5GuiAddons)
 BuildRequires:	cmake(KF5DocTools)
 BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5Crash)
 
 %description
 Blinken is the KDE version of the well-known game Simon Says.
