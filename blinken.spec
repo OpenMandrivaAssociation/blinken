@@ -2,7 +2,7 @@
 
 Summary:	Simon Says Game
 Name:		blinken
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -30,7 +30,7 @@ Follow the pattern of sounds and lights as long as you can! Press the
 start game button to begin. Watch the computer and copy the pattern it
 makes. Complete the sequence in the right order to win.
 
-%files
+%files -f %{name}.lang
 %doc AUTHORS
 %{_bindir}/blinken
 %{_iconsdir}/*/*/apps/blinken.*
@@ -50,4 +50,4 @@ makes. Complete the sequence in the right order to win.
 
 %install
 %ninja_install -C build
-
+%find_lang %{name}
