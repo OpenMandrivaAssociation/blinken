@@ -2,7 +2,7 @@
 
 Summary:	Simon Says Game
 Name:		blinken
-Version:	17.11.90
+Version:	17.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
