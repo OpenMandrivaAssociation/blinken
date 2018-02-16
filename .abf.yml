@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   blinken-17.12.1.tar.xz: 4f70add19b8ad731bb9d61d30374d153fc216c07
+sources:
+  blinken-17.12.2.tar.xz: 5e677607cf35ad26f0406ba327e8865b24b77632
