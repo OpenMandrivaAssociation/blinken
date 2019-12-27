@@ -2,12 +2,12 @@
 
 Summary:	Simon Says Game
 Name:		blinken
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/blinken/
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(Phonon4Qt5)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Core)
