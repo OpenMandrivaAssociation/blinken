@@ -2,8 +2,8 @@
 
 Summary:	Simon Says Game
 Name:		blinken
-Version:	22.08.2
-Release:	2
+Version:	22.08.3
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/blinken/
