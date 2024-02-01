@@ -2,7 +2,7 @@
 
 Summary:	Simon Says Game
 Name:		plasma6-blinken
-Version:	24.01.85
+Version:	24.01.95
 Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
