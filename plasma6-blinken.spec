@@ -1,13 +1,20 @@
+%define git 20240217
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 
 Summary:	Simon Says Game
 Name:		plasma6-blinken
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/blinken/
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/education/blinken/-/archive/%{gitbranch}/blinken-%{gitbranchd}.tar.bz2#/blinken-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/blinken-%{version}.tar.xz
+%endif
 BuildRequires:	cmake(Phonon4Qt6)
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Core)
@@ -42,7 +49,7 @@ makes. Complete the sequence in the right order to win.
 #----------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n blinken-%{version}
+%autosetup -p1 -n blinken-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
