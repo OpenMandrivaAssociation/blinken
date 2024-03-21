@@ -5,8 +5,8 @@
 
 Summary:	Simon Says Game
 Name:		plasma6-blinken
-Version:	24.02.0
-Release:	%{?git:0.%{git}.}2
+Version:	24.02.1
+Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
 Url:		http://edu.kde.org/blinken/
