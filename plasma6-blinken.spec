@@ -9,7 +9,7 @@ Version:	24.08.2
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
-Url:		http://edu.kde.org/blinken/
+Url:		https://edu.kde.org/blinken/
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/education/blinken/-/archive/%{gitbranch}/blinken-%{gitbranchd}.tar.bz2#/blinken-%{git}.tar.bz2
 %else
