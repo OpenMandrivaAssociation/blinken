@@ -5,7 +5,7 @@
 
 Summary:	Simon Says Game
 Name:		blinken
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 License:	GPLv2+
 Group:		Graphical desktop/KDE
@@ -32,6 +32,11 @@ BuildRequires:	cmake(KF6DocTools)
 BuildRequires:	cmake(KF6DBusAddons)
 BuildRequires:	cmake(KF6Crash)
 
+%rename plasma6-blinken
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
 %description
 Blinken is the KDE version of the well-known game Simon Says.
 Follow the pattern of sounds and lights as long as you can! Press the
@@ -45,19 +50,4 @@ makes. Complete the sequence in the right order to win.
 %{_datadir}/blinken
 %{_datadir}/metainfo/*.xml
 %{_datadir}/config.kcfg/blinken.kcfg
-%{_docdir}/HTML/*/blinken
 %{_datadir}/applications/org.kde.blinken.desktop
-#----------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n blinken-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang blinken
